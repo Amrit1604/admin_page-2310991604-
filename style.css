@@ -1,0 +1,170 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Login Form Styling */
+#login-page {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+#login-page h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f0f0f0;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#login-form input::placeholder {
+    color: #ddd;
+}
+
+#login-form input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#login-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#login-form button:hover {
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Styling */
+.dashboard {
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f0f0f0;
+}
+
+.dashboard p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.dashboard button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dashboard button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Task List Styling */
+#task-list {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.task-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-item button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+#error-message {
+    color: #ff4b2b;
+    margin-top: 10px;
+    font-size: 1rem;
+}
